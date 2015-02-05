@@ -1,0 +1,30 @@
+.titulo{
+             position: absolute;
+             width: 480px;
+             height: 120px;
+             top: 30px;
+             left: 30px;
+             padding: 5px;
+             text-align: left;
+             line-height: 60px;
+             text-transform: uppercase;
+             font-size: 50px;
+             color: #FFFFFF;
+        }
+
+            .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av
+            {
+                background: url(../../../img/b21.png) no-repeat;
+                overflow:hidden;
+                cursor: pointer;
+            }
+            .jssorb21 div { background-position: -5px -5px; }
+            .jssorb21 div:hover, .jssorb21 .av:hover { background-position: -35px -5px; }
+            .jssorb21 .av { background-position: -65px -5px; }
+            .jssorb21 .dn, .jssorb21 .dn:hover { background-position: -95px -5px; }
+
+
+.conteudo{
+	width: 100%;
+	background: #555;
+}
