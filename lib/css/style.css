@@ -171,6 +171,7 @@ select.option3 {
   display: inline-table;
 }
 .descricaoItens li img {
+  margin-right: 10px;
   vertical-align: middle;
 }
 
