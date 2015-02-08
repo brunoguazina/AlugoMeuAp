@@ -1,3 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700,800);
+.InformacaoPrincipal .nome, .InformacaoPrincipal .condicoes {
+  display: inline-table;
+  width: 49.5%;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  background: url(../../img/background.jpg);
+}
+
 .titulo {
   position: absolute;
   width: 480px;
@@ -12,7 +26,9 @@
   color: #FFFFFF;
 }
 
-.jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
+.jssorb21 div,
+.jssorb21 div:hover,
+.jssorb21 .av {
   background: url(../../img/b21.png) no-repeat;
   overflow: hidden;
   cursor: pointer;
@@ -22,7 +38,8 @@
   background-position: -5px -5px;
 }
 
-.jssorb21 div:hover, .jssorb21 .av:hover {
+.jssorb21 div:hover,
+.jssorb21 .av:hover {
   background-position: -35px -5px;
 }
 
@@ -30,11 +47,107 @@
   background-position: -65px -5px;
 }
 
-.jssorb21 .dn, .jssorb21 .dn:hover {
+.jssorb21 .dn,
+.jssorb21 .dn:hover {
   background-position: -95px -5px;
 }
 
 .conteudo {
-  width: 100%;
-  background: #555;
+  position: relative;
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-weight: lighter;
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+p {
+  font-weight: lighter;
+}
+
+.InformacaoPrincipal {
+  margin-top: 25px;
+}
+.InformacaoPrincipal .nome h1 {
+  text-transform: uppercase;
+  font-size: 38px;
+}
+.InformacaoPrincipal .nome h2 {
+  font-size: 18px;
+  color: orange;
+}
+.InformacaoPrincipal .condicoes {
+  text-align: right;
+}
+
+select {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  font-weight: lighter;
+  border: 0 !important;
+  vertical-align: top;
+  width: 100px;
+  text-indent: 0.01px;
+  color: #000;
+  border-radius: 15px;
+  padding: 5px;
+  margin-top: 10px;
+  width: 140px;
+  display: inline-table;
+}
+
+select.balck {
+  background-color: #000;
+}
+
+select.option3 {
+  border-radius: 10px 0;
+}
+
+.valor {
+  font-family: 'Oswald', sans-serif;
+  margin-left: 12px;
+  display: inline-table;
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.descricaoGeral {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.descricaoItens {
+  margin: 0;
+  padding: 0;
+}
+.descricaoItens li {
+  height: 32px;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 24%;
+  display: inline-table;
+}
+
+.descricaoDetalhada {
+  margin-top: 45px;
+  font-size: 18px;
+}
+.descricaoDetalhada p {
+  margin: 10px auto;
+}
+
+#map-canvas {
+  height: 400px;
 }
