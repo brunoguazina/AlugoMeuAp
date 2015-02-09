@@ -1,10 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700,800);
-@media screen and (max-width: 800px) {
-  div {
-    display: block;
-  }
-
+@media screen and (max-width: 990px) {
   .descricaoItens {
     display: none;
   }
