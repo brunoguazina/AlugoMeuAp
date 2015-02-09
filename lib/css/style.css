@@ -1,5 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700,800);
+@media screen and (max-width: 800px) {
+  div {
+    display: block;
+  }
+
+  .descricaoItens {
+    display: none;
+  }
+}
 @font-face {
   font-family: 'icomoon';
   src: url("../fonte/icomoon.eot?4c7t1p");
@@ -91,6 +100,7 @@ body {
 .conteudo {
   position: relative;
   max-width: 1280px;
+  min-width: 990px !important;
   width: 90%;
   margin: 0 auto;
 }
