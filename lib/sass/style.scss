@@ -58,6 +58,10 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	background: url(../../img/background.jpg);
 }
+.master{
+	width: 1024px;
+	margin: 0 auto;
+}
 .titulo {
 	position: absolute;
 	width: 480px;
@@ -76,7 +80,7 @@ body {
 .jssorb21 div:hover,
 .jssorb21 .av {
 	background: url(../../img/b21.png) no-repeat;
-	overflow: hidden;
+	
 	cursor: pointer;
 }
 
