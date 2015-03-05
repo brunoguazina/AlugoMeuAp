@@ -1,10 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700,800);
-@media screen and (max-width: 990px) {
-  .descricaoItens {
-    display: none;
-  }
-}
 @font-face {
   font-family: 'icomoon';
   src: url("../fonte/icomoon.eot?4c7t1p");
@@ -41,6 +36,11 @@
   content: "\e603";
 }
 
+@media screen and (max-width: 990px) {
+  .descricaoItens {
+    display: none;
+  }
+}
 .InformacaoPrincipal .nome, .InformacaoPrincipal .condicoes {
   display: inline-table;
   width: 49.5%;
@@ -111,8 +111,23 @@ h1, h2 {
   margin: 0;
 }
 
+h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+h3:before {
+  content: "..:: ";
+}
+h3:after {
+  content: " ::..";
+}
+
 p {
   font-weight: lighter;
+  max-width: 990px;
+  font-size: 16px;
+  margin: 10px auto;
 }
 
 .InformacaoPrincipal {
@@ -188,26 +203,6 @@ select.option3 {
 .descricaoDetalhadaDoApartamento,
 .descricaoDetalhadaDaLocalizacao {
   margin-top: 50px;
-}
-.descricaoDetalhadaDoApartamento h3,
-.descricaoDetalhadaDaLocalizacao h3 {
-  font-size: 22px;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-.descricaoDetalhadaDoApartamento h3:before,
-.descricaoDetalhadaDaLocalizacao h3:before {
-  content: "..:: ";
-}
-.descricaoDetalhadaDoApartamento h3:after,
-.descricaoDetalhadaDaLocalizacao h3:after {
-  content: " ::..";
-}
-.descricaoDetalhadaDoApartamento p,
-.descricaoDetalhadaDaLocalizacao p {
-  max-width: 990px;
-  font-size: 16px;
-  margin: 10px auto;
 }
 
 .contato {

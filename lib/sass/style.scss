@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700,800);
+
+@import "_fonte";
 
 @media screen and (max-width: 990px) {
     .descricaoItens {
@@ -7,50 +7,10 @@
     }
 }
 
-@font-face {
-	font-family: 'icomoon';
-	src:url('../fonte/icomoon.eot?4c7t1p');
-	src:url('../fonte/icomoon.eot?#iefix4c7t1p') format('embedded-opentype'),
-		url('../fonte/icomoon.woff?4c7t1p') format('woff'),
-		url('../fonte/icomoon.ttf?4c7t1p') format('truetype'),
-		url('../fonte/icomoon.svg?4c7t1p#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.icon-facebook:before {
-	content: "\e600";
-}
-.icon-twitter:before {
-	content: "\e601";
-}
-.icon-github:before {
-	content: "\e602";
-}
-.icon-linkedin:before {
-	content: "\e603";
-}
-
-
 %inline {
 	display: inline-table;	
 	width: 49.5%;
 }
-
 
 body {
 	padding:0px;
@@ -58,10 +18,12 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	background: url(../../img/background.jpg);
 }
+
 .master{
 	width: 1024px;
 	margin: 0 auto;
 }
+
 .titulo {
 	position: absolute;
 	width: 480px;
@@ -80,10 +42,8 @@ body {
 .jssorb21 div:hover,
 .jssorb21 .av {
 	background: url(../../img/b21.png) no-repeat;
-	
 	cursor: pointer;
 }
-
 .jssorb21 div {
 	background-position: -5px -5px;
 }
@@ -107,38 +67,51 @@ body {
 	width: 90%;
 	margin: 0 auto;
 }
+
 h1, h2{
 	font-weight: lighter;
 	padding: 0;
 	margin: 0;
 }
 
+h3{
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: 400;
+	&:before{
+		content: "..:: ";
+	}
+	&:after{
+		content: " ::..";
+	}
+}
+
 p{
 	font-weight: lighter;
+	max-width: 990px;
+	font-size: 16px;
+	margin: 10px auto;
 }
 
 .InformacaoPrincipal {
 	margin-top: 25px;
 
 	.nome {
-	@extend %inline;
-		h1{
-			text-transform: uppercase;
-			font-size: 38px;
-		}
-		h2{
-			font-size: 18px;
-			color: orange;
-		}
+		@extend %inline;
+			h1{
+				text-transform: uppercase;
+				font-size: 38px;
+			}
+			h2{
+				font-size: 18px;
+				color: orange;
+			}
 	}
 	.condicoes {
 		@extend %inline;
 		text-align: right;
 	}
 }
-
-
-
 
 select {
 	font-family: 'Open Sans', sans-serif;
@@ -200,24 +173,8 @@ select.option3 {
 .descricaoDetalhadaDoApartamento,
 .descricaoDetalhadaDaLocalizacao{
 	margin-top: 50px;
-	
-	h3{
-		font-size: 22px;
-		text-transform: uppercase;
-		font-weight: 400;
-		&:before{
-			content: "..:: ";
-		}
-		&:after{
-			content: " ::..";
-		}
-	}
-	p{
-		max-width: 990px;
-		font-size: 16px;
-		margin: 10px auto;
-	}
 }
+
 .contato{
 	margin-top: 50px;
 }
@@ -237,15 +194,14 @@ select.option3 {
 		display: inline-table;
 		padding: 8px 10px 5px 10px;
 		background: transparentize(#555, 0.5);
-		
 
 		a{
 			color: #f5f5f5;
 			font-size: 30px;
 			text-decoration: none;
 		}
-		&:hover{
 
+		&:hover{
 			background: orange;
 
 			a{
