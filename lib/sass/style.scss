@@ -1,11 +1,6 @@
 
-@import "_fonte";
-
-@media screen and (max-width: 990px) {
-    .descricaoItens {
-        display: none;
-    }
-}
+@import "_font";
+@import "_mediaQueries";
 
 %inline {
 	display: inline-table;	
