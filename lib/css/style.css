@@ -195,6 +195,14 @@ select.option3 {
   text-transform: uppercase;
   font-weight: 400;
 }
+.descricaoDetalhadaDoApartamento h3:before,
+.descricaoDetalhadaDaLocalizacao h3:before {
+  content: "..:: ";
+}
+.descricaoDetalhadaDoApartamento h3:after,
+.descricaoDetalhadaDaLocalizacao h3:after {
+  content: " ::..";
+}
 .descricaoDetalhadaDoApartamento p,
 .descricaoDetalhadaDaLocalizacao p {
   max-width: 990px;

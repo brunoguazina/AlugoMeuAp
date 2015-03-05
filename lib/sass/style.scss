@@ -205,6 +205,12 @@ select.option3 {
 		font-size: 22px;
 		text-transform: uppercase;
 		font-weight: 400;
+		&:before{
+			content: "..:: ";
+		}
+		&:after{
+			content: " ::..";
+		}
 	}
 	p{
 		max-width: 990px;
